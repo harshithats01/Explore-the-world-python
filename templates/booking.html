@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Book Your Ticket</title>
+      <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image:url(/static/images/Regii.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        div.main{
+            width: 600px;
+            margin: 10px auto 0px auto;
+        }
+        h1{
+         text-align: center;
+            padding: 10px;
+            font-family:'Courier New', Courier, monospace
+        }
+        div.booking{
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            font-size: 18px;
+            border-radius:5px ;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+            color: #fff;
+        }
+        form#booking{
+            margin: 40px;
+        }
+        label{
+            font-family: sans-serif;
+            font-size: 10px;
+        }
+        input#text{
+            width:500px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: 0;
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        input#date{
+            width:500px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: 0;
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        input#number{
+            width:150px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: 0;
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        select{
+            width:500px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: 0;
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        .booking-btn{
+            width: 100px;
+            padding: 5px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            background-color: rgba(250,100,0,0.8);
+            color: #fff;
+            
+            cursor: pointer;
+            border: 1px solid rgba(255,255,0.3);
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .booking-btn a{
+            color:#fff;
+            text-decoration: none;
+        }
+      </style>
+   </head>
+ <body>
+   <div class="main">
+   <div class="booking">
+  <form id="booking" method="post">
+    {% csrf_token %}
+   <h1>Book Your Tickets</h1>
+   <label>NAME:<input type="TEXT" size="20" id="text" placeholder="Enter your name" maxlength="99" /></label><br>
+   <label>AGE:<input type="TEXT" size="12"  id="text"  placeholder="Your Age" maxlength="99" /></label><br>
+   <label>ADDRESS:<input type="TEXT" size="42"  id="text" placeholder="Your Address"  maxlength="99" /></label><br>
+   <label>EMAIL:<input type="TEXT" size="30"  id="text"  placeholder="Email id" maxlength="99" /></label><br>
+   <label>PHONE NUMBER:<input type="TEXT" size="10"  id="text"  placeholder="Phone Number" maxlength="99" /></label><br>
+   <label>DEPARTING :<input type="date" id="date"></label><br>
+
+   <label>RETURNING :<input type="date" id="date" ></label><br>
+   <br>
+   <label>ADULTS: <input type="number" id="number" value="1">
+   CHILDREN: <input type="number" id="number" value="0"></label><br>
+   
+   <label>TRAVEL CLASS:
+      <select >
+         <option value="1">Economy Class</option>
+         <option value="2">Business Class</option>
+         </select>
+      </label><br>
+   <label>SELECT YOUR DESTINATION;
+   <select name="CHOICES">
+    <option selected="selected">Taj- Mahal India</option>
+    <option>France</option>
+    <option>England</option>
+    <option>Switzerland</option></label>
+   </select><br>
+   <label>CITY:
+   <select name="CITY">
+    <option selected="selected">DELHI</option>
+    <option>MUMBAI</option>
+    <option>Paris</option>
+    <option>London</option>
+    <option>Bern</option></select></label>
+   <br><br>
+   <label>
+    <button type="button" class="booking-btn"><a href="{% url 'home'%}">SUBMIT</a> </button>
+    <button type="button" value="reset" class="booking-btn">RESET</button>
+</div>
+</div>
+  </form>
+ </body>
+</html>

@@ -1,0 +1,483 @@
+<html>
+  <head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <style type="text/css">
+     *
+     {
+      padding: 0;
+      margin: 0;
+     }
+     body {
+  font-family: "Poppins", sans-serif;
+}
+     .header{
+          height: 100%;
+          background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/static/images/index.jpg);
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          padding-top:20px ;
+          text-align: center;
+          color: #fff;
+     }
+     .navbar{
+    
+    background-color:transparent;
+    
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   }
+   .navbar ul li a{
+    color: #efefef;;
+   }
+   .navbar ul li a b{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif
+   }
+   .navbar ul li a:hover{
+    color:#00ffff;
+   }
+     .header h1{
+        padding-top:230px ;
+        padding-bottom: 0;
+        font-size: 55px;
+     }
+     .header p{
+         margin: 18px 0;
+         font-size: 20px;
+     }
+     .input-group{
+        width: 90% !important;
+        max-width: 500px;
+        border-radius: 30px;
+        background: #fff;
+        margin: auto;
+        padding: 2px;
+     }
+     .form-control{
+         border: 0 !important;
+         border-radius: 30px !important;
+         margin: 2px;
+         box-shadow: none !important;
+     }
+     .input-group-text{
+         width: 100%;
+         background-image: linear-gradient(#00ffff,#1f3d90);
+         border: 0 !important;
+         outline: 0;
+         font-size: 16px;
+         color:#fff !important;
+         padding-left: 0 25px !important;
+         border-radius: 40px !important;
+         box-shadow:none !important;
+         padding: 10px 30px;
+     }
+     .input-group-text a{
+      color: #fff;
+      text-decoration: none;
+     }
+     /*features*/
+
+     .features{
+      padding: 100px 0;
+      }
+      h1{
+        text-align:center;
+        padding-bottom: 30px;
+
+      }
+      .feature-img img{
+        width: 100%;
+        height: 36.5%;
+      }
+      .feature-img1 img{
+        width: 100%;
+        height: 36.5%;
+      }
+      .feature-img2 img{
+        width: 100%;
+        height: 36.5%;
+      }
+      .price{
+        width: 82px;
+        height:50px;
+        background:#ff5722 ;
+        color: #fff;
+        font-weight: 500;
+        padding: 10px;
+        box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+        position:relative;
+        bottom: -10px;
+      }
+      .feature-img{
+        position: relative;
+      }
+    
+      .feature-details{
+        padding: 20px;
+        text-align:justify ;
+      }
+      .feature-details h4{
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      .feature-box{
+        box-shadow:0 0 10px 1px rgba(37,73,214,0.18) ;
+        margin-bottom: 30px ;
+      }
+      .img-gallery{
+         width: 80%;
+         margin: 100px auto 50px;
+         display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+         grid-gap:30px;
+      }
+      .img-gallery img{
+        width: 100%;
+        cursor: pointer;
+      }
+     .img-gallery img:hover{
+        transform: scale(1.1) ;
+        border-radius: 20px;
+        box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+
+     }
+      .banner{
+        height: 80%;
+        background-image:url(/static/images/1543466853365.jpg) ;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 14%;
+      }
+      .banner-highlights{
+        padding: 70px 0;
+        background: rgba(0,0,0,0.7);
+        text-align: center;
+        color: #fff;
+      }
+      .booking-btn{
+      width: 120px;
+      padding: 8px 0;
+      outline: none !important;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      background: transparent;
+      color: #fff;
+      margin-top: 20px;
+      }
+      .booking-btn a{
+        color: #fff;
+        text-decoration: none;
+      }
+      .users-feedback{
+        padding: 100px 0;
+      }
+      .user-review{
+        text-align: center;
+        box-shadow: 0 0 10px 0 rgba(0,0,100,0.2);
+        padding-bottom: 60px;
+      }
+      .user-review p{
+        padding: 45px 10px 10px 10px;
+      }
+      .users-feedback img{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        position: relative;
+        margin: -35px 0 20px 40%;
+      }
+     
+        .footer{
+          padding: 100px 20px 15px;
+          background-image: linear-gradient(#5d9cd7,#1f3d90);
+          color:#fff;
+        }
+        .footer h4{
+          text-align: left;
+          margin-top: 15px;
+          margin-bottom: 25px;
+        }
+        .footer p{
+          font-size: 12px;
+          text-align: justify;
+          padding-right: 35px;
+        }
+        .footer hr{
+             margin-top: 10px;
+             background: #efefef;
+        }
+        .footer .copyright{
+          text-align: center;
+        }
+        .maping{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .maping h1{
+          color: #333;
+          margin-bottom:60px;
+        }
+        iframe{
+          width: 100%;
+          height: 500px;
+        }
+</style>
+<body>
+<section class="header">
+  <nav class="navbar navbar-expand-lg">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+       aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      &nbsp;&nbsp;&nbsp;
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}"><b>Home </b><span class="sr-only">(current)</span></a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#features"><b>Destinations</b></a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery"><b>Gallery</b></a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#users"><b>Testimonial</b></a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}"><b>About</b></a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}"><b>Contact</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'servicepage' %}"><b>Services</b></a>
+          </li>    
+        
+
+        </ul>
+     
+      </div>
+    </nav>
+  <h1>Explore The World</h1>
+  <p>Discover The Real Value Of Travel</p>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search Country or City">
+    <div class="input-group-append">
+      <button type="submit" class="input-group-text btn"><a href="#features">Search</a></button>
+    </div> 
+  </div>
+</section>
+<section id="features" class="features">
+  
+  <h1>Featured Destinations</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-img">
+            <img src="/static/images/Taj.jpg">
+            <div class="price">
+              <p>Rs.15,000</p>
+              </div>
+              
+              
+            <div class="feature-details">
+              <h4>India</h4>
+              <p>India has a rich and varied history dating back to 300,000 years ago. 
+                For the same reason, there are several tourist attractions in India of 
+                historical significance. Among the plethora of tourist attractions in India, 
+                a lot of them are mosques, temples, churches and gurudwaras owing to the rich 
+                culture and religious diversity in the country. Some of these are also 
+                  UNESCO World Heritage Site.</p>
+              <div>
+                <span><b> 3 Nights  4 days</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-img1">
+            <img src="/static/images/pexels-photo-338515.jpeg">
+            <div class="price">
+              <p>Rs.30,000</p>
+              </div>
+              
+            <div class="feature-details">
+              <h4>Paris</h4>
+              <p>Paris is a beautiful city. It has different areas that are each unique and captivating.
+                A city so synonymous with beauty, even the least romantic are defenseless against its charms.
+                 The Latin Quarter is a maze of old streets and narrow alleys. The Champs-Élysées are full of energy 
+                 and panache. Montmartre is filled with charming, old-fashioned charm and a Bohemian past.
+              </p>
+              <div>
+                <span> <b>5 Nights  6 days</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-img2">
+            <img src="/static/images/pexels-photo-1796715.jpeg">
+            <div class="price">
+              <p>Rs.70,000</p>
+              </div>
+              
+            <div class="feature-details">
+              <h4>London</h4>
+              <p>One of the world's most visited cities, London is also known 
+                as the financial hub of the world with major banks headquartered
+                 in the city. Rich in history and culture, the city is filled with 
+                 iconic landmarks including the world-famous Tower Bridge and the 
+                 magnificent Big Ben. Not to mention the food scene, thousands of
+                  bars and restaurants spread across the city serving almost every 
+                  cuisine imaginable.</p>
+              <div>
+                <span><b>6 Nights  7 days</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h1>Travelling Gallery</h1>
+  <div class="img-gallery">
+    
+    <img src="/static/images/R.jpeg">
+    <img src="/static/images/pexels-photo-l.jpeg">
+    <img src="/static/images/travel-2.jpg">
+    <img src="/static/images/pexels-photo-s.jpeg">
+</div>
+</section>
+<section class="banner">
+  <div class="banner-highlights">
+     <div class="container">
+         <div class="row">
+          <div class="col-md-8">
+            <h2>Get 30% on Top Destination</h2>
+            <p>Book your tickets Now!</p>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="booking-btn"><a href="{% url 'booking'%}">BOOK NOW</a> </button>
+          </div>
+         </div>
+     </div>
+
+
+  </div>
+</section>
+
+<section id="users" class="users-feedback">
+  <h1>Users Review</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="user-review">
+          <p>" I'd like to express my great satisfaction with the tour 
+             and all the arrangements. We hada wonderful time in India.
+             The accommodation was mainly in 
+             heritage hotels which were exceptional and the ambience there
+             was also unique. Local guides were all polite and friendly, 
+             attractions really worth watching or experiencing. We will 
+             recommend this tour to our friends and family members. "</p>
+            <h5> Gilbert</h5>
+            <small>India</small>
+            </div>
+            <img src="/static/images/rev3.jpeg">
+            </div>
+
+      <div class="col-md-4">
+        <div class="user-review">
+          <p>" Excellent Service - Booking was easy - Checking-In was easy
+
+            Just got back from taking my mum and dad on a short break to London - Booked  My London Trip - The apartment was awesome, 
+            well equipped, well positioned and well maintained.They provide a wonderful Service.
+            we had a great time!
+            
+            Will definitively use again in the future and recommend to anyone planning a break."</p>
+            <h5>Raihana</h5>
+            <small>London</small>
+        </div>
+        <img src="/static/images/rev1.jpg">
+      </div>
+     
+      <div class="col-md-4">
+        <div class="user-review">
+          <p>"We spent a total of 6 days on this trip to Paris bookending a visit to Provence. 
+            We walked around the city to explore, We had a fabulous time.It's such an easy city to
+             walk around and that's how we stumbled across beautiful gardens and the best patisserie we have ever had. We enjoy Paris the best by
+              combining some planned activities and some free time to wander around."</p>
+            <h5>Sarah</h5>
+            <small>Paris</small>
+        </div>
+        <img src="/static/images/rev2.jpeg">
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="maping">
+  <div class="container">
+    <h1>Location</h1>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.7390767287!2d76.81307223784437!3d28.646677258361485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1667917475622!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+<section class="footer">
+  <div class="container">
+    <div class="row">
+    
+      <div class="col-md-3">
+        <h4>Features</h4>
+        <p>Deals & Offers</p>
+        <p>Customer Reviews</p>
+        <p>Cancelation Policy</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Quick Contact</h4>
+        <p>+1 3145782981</p>
+        <p>exploreworld@gmail.com</p>
+        <p>Silver Valley Road,New Delhi</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Learn More</h4>
+        <p>Advertise</p>
+        <p>Data Privacy Policy</p>
+        <p>Terms</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Follow Us on</h4>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+      </div>
+    </div><hr>
+    <p class="copyright"><b>Explore The World Ltd.All Rights Reserved</b></p>
+  </div>
+</section>
+</body>
+
+</html>
